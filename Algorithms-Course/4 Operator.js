@@ -6,25 +6,21 @@ let sum = 3 + 4;
 
 let subtraction = 10 - 4;
 
-
 // Divide operator
 
 let dividedValue = 10 / 2;
 
 console.log(dividedValue);
 
-
 // Multiply Operator
 
 let multipliedValue = 3 * 4;
 console.log(multipliedValue);
 
-
 // Percentage , Remainder Operator
 
 let remainder = 10 % 3;
 console.log(remainder);
-
 
 // Comparison Operators
 
@@ -41,10 +37,7 @@ console.log(value2);
 
 // Lesser than and equals to   <=
 
-
-
 // Advance Comparisons (Logical Operators)
-
 
 // AND Operator (&&) ****************
 
@@ -53,10 +46,8 @@ console.log(value2);
 // false && true --> false
 // false && false --> false
 
-
 let value4 = false && false;
 console.log(value4);
-
 
 // Real Example if block
 
@@ -70,14 +61,12 @@ let num3 = 10;
 //     console.log("Prabh is Wrong");
 // }
 
-
 // If any of the condition is wrong, then the output will be false
 // if (num2 < num1 && num3 > num2) {
 //     console.log("Prabh is right ");
 // } else {
 //     console.log("Prabh is Wrong");
 // }
-
 
 // OR Operator (||) ****************
 
@@ -86,9 +75,8 @@ let num3 = 10;
 // false && true --> true
 // false && false --> false
 
-
 if (num2 < num1 || num3 < num2) {
-    console.log("Prabh is right ");
+  console.log('Prabh is right ');
 } else {
-    console.log("Prabh is Wrong");
+  console.log('Prabh is Wrong');
 }

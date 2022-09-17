@@ -1,0 +1,4 @@
+// One exercise for today is For Arrays, For Strings, For Objects
+// Learn 2 additional that we didn't learned
+
+

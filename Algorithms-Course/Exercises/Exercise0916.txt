@@ -1,4 +1,14 @@
-// One exercise for today is For Arrays, For Strings, For Objects
-// Learn 2 additional that we didn't learned
+One exercise for today is For Arrays, For Strings, For Objects
+Learn 2 additional that we didn't learned
 
+Arrays: 
+  1 - toString(): Converts an array to a string, separating the elements by comma (,).
+  2 - let newArray = array1.concat(array2): Create a new array by merging existing arrays.
 
+Strings:
+  1 - replace(old, new): Replace a specific value for another.
+  2 - trim(): Remove whitespaces from both sides of the string.
+
+Objects: 
+  1 - freeze(): don't allow other codes to change this object properties.
+  2 - keys(): return an array, containing all the names od the properties inside the object.

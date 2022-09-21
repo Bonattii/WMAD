@@ -49,3 +49,5 @@ console.log(arrayLargestNumber);
 // Alternative to question 3
 
 console.log(Math.max(...array));
+
+

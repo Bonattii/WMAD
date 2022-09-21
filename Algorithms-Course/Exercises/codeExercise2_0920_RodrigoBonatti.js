@@ -22,7 +22,7 @@ function sumOfElements(array) {
   return sum;
 }
 
-let array = [1, 2, 4];
+let array = [1, 2, 4, 31, 14, 14, 14231, 167623];
 let arraySum = sumOfElements(array);
 
 console.log(arraySum);
@@ -45,3 +45,7 @@ function largestNumber(array) {
 
 let arrayLargestNumber = largestNumber(array);
 console.log(arrayLargestNumber);
+
+// Alternative to question 3
+
+console.log(Math.max(...array));

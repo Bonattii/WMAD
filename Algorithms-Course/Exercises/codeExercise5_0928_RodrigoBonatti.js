@@ -73,3 +73,20 @@ function binarySearch(array, target, start, end) {
 console.log(binarySearch(sortedNumList, 8, beginOfArray, endOfArray));
 
 // The Big O Notation for the question 3 is O(log(n))
+
+// 4 - Write a function to find the sum of numbers in an array but using recursion
+
+function findSumArrayRec(array) {
+  if (array.length === 0) {
+    return -1;
+  } else if (array.length === 1) {
+    return array[0];
+  } else {
+    return array.pop() + findSumArrayRec(array);
+  }
+}
+
+let numListQ4 = [1, 2, 3];
+console.log(findSumArrayRec(numListQ4));
+
+// The Big O Notation on the question 4 is O(n)

@@ -1,4 +1,4 @@
-class Fruits {
+public class Fruits {
   public String name, color;
   public boolean isTasty;
   public int quantity;
@@ -33,25 +33,5 @@ class Fruits {
       this.weigth -= 0.7;
       this.price -= 1;
     }
-  }
-}
-
-public class Main {
-  public static void main(String[] args) {
-    Fruits apple = new Fruits("apple", "red", true, 1, 0.5, 0.88);
-    Fruits banana = new Fruits("banana", "yellow", true, 1, 0.7, 1);
-
-    System.out.println(apple.name);
-    System.out.println(banana.name);
-    banana.addQuantity();
-    banana.addQuantity();
-    banana.addQuantity();
-    banana.removeQuantity();
-    apple.addQuantity();
-    apple.addQuantity();
-    System.out.println(apple.weigth);
-    System.out.println(apple.quantity);
-    System.out.println(banana.weigth);
-    System.out.println(banana.quantity);
   }
 }

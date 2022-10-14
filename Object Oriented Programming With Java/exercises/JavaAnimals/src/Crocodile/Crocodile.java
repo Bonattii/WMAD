@@ -23,4 +23,8 @@ public class Crocodile extends Reptile {
   public void setHardShelledEggs(boolean hardShelledEggs) {
     this.hardShelledEggs = hardShelledEggs;
   }
+
+  public void showInfo() {
+    System.out.println(this.getAnimalType());
+  }
 }

@@ -3,7 +3,11 @@ package Crocodile;
 import Reptile.Reptile;
 
 public class Crocodile extends Reptile {
-  boolean hardShelledEggs;
+  private boolean hardShelledEggs;
+
+  public Crocodile() {
+    this.hardShelledEggs = true;
+  }
 
   public Crocodile(boolean hardShelledEggs, String skinType, String bone, String eggType, int height, double weight,
       String animalType,
@@ -16,8 +20,7 @@ public class Crocodile extends Reptile {
     return hardShelledEggs;
   }
 
-  public void showInfo() {
-    System.out.println(hardShelledEggs + "-" + skinType + "-" + bone + "-" + eggType + "-" + height + "-" + weight + "-"
-        + animalType + "-" + bloodType);
+  public void setHardShelledEggs(boolean hardShelledEggs) {
+    this.hardShelledEggs = hardShelledEggs;
   }
 }

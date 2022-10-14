@@ -3,7 +3,13 @@ package Reptile;
 import Animal.Animal;
 
 public class Reptile extends Animal {
-  public String skinType, bone, eggType;
+  private String skinType, bone, eggType;
+
+  public Reptile() {
+    this.skinType = "Soft";
+    this.bone = "Backbone";
+    this.eggType = "Soft Shell";
+  }
 
   public Reptile(String skinType, String bone, String eggType, int height, double weight, String animalType,
       String bloodType) {
@@ -23,5 +29,17 @@ public class Reptile extends Animal {
 
   public String getBone() {
     return bone;
+  }
+
+  public void setSkinType(String skinType) {
+    this.skinType = skinType;
+  }
+
+  public void setBone(String bone) {
+    this.bone = bone;
+  }
+
+  public void setEggType(String eggType) {
+    this.eggType = eggType;
   }
 }

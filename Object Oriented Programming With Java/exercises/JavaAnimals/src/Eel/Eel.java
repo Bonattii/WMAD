@@ -3,7 +3,11 @@ package Eel;
 import Fish.Fish;
 
 public class Eel extends Fish {
-  public boolean releaseEletricCharge;
+  private boolean releaseEletricCharge;
+
+  public Eel() {
+    this.releaseEletricCharge = false;
+  }
 
   public Eel(boolean releaseEletricCharge, boolean liveInWater, boolean hasGills, int height, double weight,
       String animalType, String bloodType) {
@@ -15,8 +19,7 @@ public class Eel extends Fish {
     return releaseEletricCharge;
   }
 
-  public void showInfo() {
-    System.out.println(releaseEletricCharge + "-" + liveInWater + "-" + hasGills + "-" + height + "-" + weight + "-"
-        + animalType + "-" + bloodType);
+  public void setReleaseEletricCharge(boolean releaseEletricCharge) {
+    this.releaseEletricCharge = releaseEletricCharge;
   }
 }

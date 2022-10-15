@@ -22,4 +22,8 @@ public class Eel extends Fish {
   public void setReleaseEletricCharge(boolean releaseEletricCharge) {
     this.releaseEletricCharge = releaseEletricCharge;
   }
+
+  public void showInfo() {
+    System.out.println(this.getAnimalType());
+  }
 }

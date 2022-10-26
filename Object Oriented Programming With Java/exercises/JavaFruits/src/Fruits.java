@@ -1,3 +1,5 @@
+package exercises.JavaFruits.src;
+
 public class Fruits {
   public String name, color;
   public boolean isTasty;

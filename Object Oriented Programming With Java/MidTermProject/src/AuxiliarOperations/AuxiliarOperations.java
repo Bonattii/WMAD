@@ -57,16 +57,23 @@ public class AuxiliarOperations {
     }
 
     public int getTheTwoFirstNumbers(long cardNumber) {
+        // This will take the two first digits of the card number
+        // Firstly converting to a string to use the substring method
+        // Then will pass to an integer again
         int twoFirstDigits = Integer.parseInt(Long.toString(cardNumber).substring(0, 2));
 
         return twoFirstDigits;
     }
 
     public boolean Luhn() {
+        // Will call the other auxiliar methods to be able to have the total sum 
+        // Of the luhn algorithm
+
         int sumNoMultipliedNumber = this.sumNoMultiplied(card);
         int sumMultipliedNumber = this.SumMultiplied(card);
         int totalSum = sumMultipliedNumber + sumNoMultipliedNumber;
 
+        // If the sum % 10 == 0 then is a valid card number 
         if ((totalSum % 10) == 0) {
             return true;
         } else {
@@ -77,6 +84,8 @@ public class AuxiliarOperations {
     public int lengthOfCard(long cardNumber) {
         int i = 0;
     
+        // The card number is a number so the .length doesn't work
+        // I had to implement a method that return the length of the number 
         while (cardNumber > 0) {
             cardNumber = cardNumber / 10;
             i++;
@@ -86,9 +95,11 @@ public class AuxiliarOperations {
     }
 
     public void verificator() {
+        // Will call the two first numbers method and the length method
         int firstNumbers = this.getTheTwoFirstNumbers(card);
         int length = this.lengthOfCard(card);
 
+        // Will use the variables firstNumbers and length to determine witch brand is the card 
         if ((firstNumbers == 34 || firstNumbers == 37) && length == 15) {
             System.out.println("Your AMEX credit card " + card + " is Valid!");
         } else if ((firstNumbers > 50 && firstNumbers < 56) && length == 16) {

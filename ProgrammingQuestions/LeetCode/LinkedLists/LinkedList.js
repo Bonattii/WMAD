@@ -52,3 +52,95 @@ function addNewNode(head, val) {
 }
 
 addNewNode(node1, 50);
+
+// Homework Question 1
+
+// Write a function that deletes the node in the last index
+
+function deleteNodeLastIndex(head) {
+  if (head === null) {
+    return null;
+  }
+
+  if (head.next === null) {
+    return null;
+  }
+
+  // secondLastNode = node1 = 10
+  let secondLastNode = head;
+
+  // secondLastNode.next.next === 30
+  while (secondLastNode.next.next !== null) {
+    // secondLastNode.next = 20
+    secondLastNode = secondLastNode.next;
+  }
+
+  // So on until secondLastNode.next.next === null
+  // And secondLastNode.next === 40
+
+  // secondLastNode.next == null , it means 40 will point to null
+  secondLastNode.next = null;
+
+  return head;
+}
+
+deleteNodeLastIndex(node1);
+printNodeValues(node1);
+
+// Write a function that deletes the node at the given index
+
+function deleteNodeAtIndex(head, n) {
+  let current = head;
+
+  // If n == 0 just change the head to be head.next
+  if (n === 0) {
+    head = current.next;
+    return;
+  }
+
+  // This loop will find the previus node of the position to be deleted
+  for (let i = 0; current !== null && i < n - 1; i++) {
+    current = current.next;
+  }
+
+  // This if take care of outside the boundaries n
+  if (current === null || current.next === null) {
+    return;
+  }
+
+  // This takes the node after that one we want to delete
+  // Because at this point our current is the previus node
+  let next = current.next.next;
+
+  current.next = next;
+}
+
+deleteNodeAtIndex(node1, 2);
+printNodeValues(node1);
+
+// Write a function that deletes the node at the given index
+
+function addNodeAtIndex(head, n, val) {
+  let current = head;
+
+  // This loop will find the previus node of the position to be deleted
+  for (let i = 0; current !== null && i < n - 1; i++) {
+    current = current.next;
+  }
+
+  // Previus node cannot be null
+  if (current === null) {
+    return;
+  }
+
+  let newNode = new Node(val);
+
+  // New node will point on where the previous one was pointing
+  newNode.next = current.next;
+
+  // The previus node will point to the new node
+  current.next = newNode;
+}
+
+addNodeAtIndex(node1, 2, 75);
+printNodeValues(node1);

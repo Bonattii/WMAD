@@ -263,3 +263,11 @@ nav .wrapper {
 #campfire .content p {
   color: var(--primary-color);
 }
+
+/* ===================== FOOTER ===================== */
+
+footer {
+  padding: 2.5rem;
+  color: var(--white);
+  font-size: 1.4rem;
+}

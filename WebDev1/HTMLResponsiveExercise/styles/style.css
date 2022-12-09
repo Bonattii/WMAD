@@ -9,7 +9,7 @@
 :root {
   font-size: 62.5%; /* 1rem = 10px */
 
-  --nav-height: 6rem;
+  --nav-height: 8\7.5rem;
 
   --primary-color: hsl(0, 0%, 22%);
   --primary-lighter: hsl(0, 0%, 30%);
@@ -123,6 +123,7 @@ h2 > span {
 nav {
   display: flex;
   width: 100vw;
+  justify-content: center;
 
   height: var(--nav-height);
 }
@@ -144,12 +145,25 @@ nav .wrapper {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  margin: 0;
+  width: 100%;
 }
 
-.links a {
-  border-top: 0.2rem solid var(--primary-lighter);
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.menu a {
+  border-top: 0.01rem solid var(--primary-lighter);
+  padding: 0.5rem 0;
+  background-color: var(--primary-color);
+}
+
+.menu a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-lighter);
 }
 
 /* ===================== HOME ===================== */
@@ -173,9 +187,11 @@ nav .wrapper {
   position: relative;
   padding-bottom: 4rem;
   z-index: 100;
+  margin: 0;
+  width: 100%;
 }
 
-#home .wrapper:before {
+#home .wrapper::before {
   content: '';
 
   background-image: url(../imgs/men-and-dog-camping.jpg);
@@ -193,6 +209,7 @@ nav .wrapper {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
+  margin-inline: auto;
 }
 
 /* ===================== ABOUT ===================== */

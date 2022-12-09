@@ -14,7 +14,7 @@
   --primary-color: hsl(0, 0%, 22%);
   --primary-lighter: hsl(0, 0%, 30%);
   --primary-darker: hsl(0, 0%, 20%);
-  --secondary-color: hsl(38, 88%, 48%);
+  --secondary-color: hsl(38, 88%, 47%);
   --white: hsl(240, 21%, 96%);
   --white-darker: hsl(240, 21%, 100%);
 }
@@ -96,7 +96,7 @@ section header h2 {
 section header h3 {
   font-size: 2rem;
   color: var(--primary-darker);
-  font-weight: 500;
+  font-weight: 700;
   line-height: 150%;
   letter-spacing: 0.08rem;
 
@@ -178,7 +178,7 @@ nav .wrapper {
 #home .wrapper:before {
   content: '';
 
-  background-image: url(https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGNhbXBpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60);
+  background-image: url(../imgs/men-and-dog-camping.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -199,7 +199,7 @@ nav .wrapper {
 
 #about {
   padding-top: 2.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 15rem;
 }
 
 #about .content p {
@@ -214,4 +214,36 @@ nav .wrapper {
 
 #about .content .button:hover {
   background-color: var(--white-darker);
+}
+
+/* ===================== LOCATION ===================== */
+
+#location {
+  background-color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+#location header img {
+  width: 5rem;
+}
+
+#location .content p {
+  color: var(--primary-color);
+}
+
+/* ===================== RENT ===================== */
+
+#rent {
+  background-color: var(--secondary-color);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+#rent header img {
+  width: 5rem;
+}
+
+#rent .content p {
+  color: var(--primary-color);
 }

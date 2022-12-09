@@ -118,7 +118,7 @@ function deleteNodeAtIndex(head, n) {
 deleteNodeAtIndex(node1, 2);
 printNodeValues(node1);
 
-// Write a function that deletes the node at the given index
+// Write a function that ad the node at the given index
 
 function addNodeAtIndex(head, n, val) {
   let current = head;

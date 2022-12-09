@@ -199,7 +199,7 @@ nav .wrapper {
 
 #about {
   padding-top: 2.5rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 
 #about .content p {
@@ -245,5 +245,21 @@ nav .wrapper {
 }
 
 #rent .content p {
+  color: var(--primary-color);
+}
+
+/* ===================== CAMPFIRE ===================== */
+
+#campfire {
+  background-color: var(--white);
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+#campfire header img {
+  width: 5rem;
+}
+
+#campfire .content p {
   color: var(--primary-color);
 }

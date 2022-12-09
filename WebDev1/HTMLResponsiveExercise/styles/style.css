@@ -9,7 +9,7 @@
 :root {
   font-size: 62.5%; /* 1rem = 10px */
 
-  --nav-height: 8\7.5rem;
+  --nav-height: 7.5rem;
 
   --primary-color: hsl(0, 0%, 22%);
   --primary-lighter: hsl(0, 0%, 30%);
@@ -287,4 +287,110 @@ footer {
   padding: 2.5rem;
   color: var(--white);
   font-size: 1.4rem;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    width: min(112rem, 100%);
+  }
+
+  section {
+    padding-block: 16rem;
+  }
+
+  /* ===================== NAVIGATION ===================== */
+  /* RESET */
+  nav .wrapper * {
+    margin: 0;
+  }
+
+  .menu {
+    display: initial;
+    justify-content: initial;
+    flex-direction: initial;
+  }
+
+  nav .wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 65%;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3.2rem;
+  }
+
+  .menu a {
+    border: 0;
+  }
+
+  .menu a:hover {
+    color: var(--secondary-color);
+    background-color: inherit;
+  }
+  /* ===================== HOME ===================== */
+
+  #home {
+    padding-block: 0;
+    padding-top: calc(var(--nav-height) -);
+  }
+
+  #home .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+    margin-inline: auto;
+    padding-inline: auto;
+  }
+
+  #home .wrapper::before {
+    content: '';
+
+    background-image: url(../imgs/men-and-dog-camping.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    background-position: left;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.65;
+  }
+
+  #home .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+
+  #home .content p {
+    padding-top: 7rem;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  #home header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home header h1 {
+    display: inline-block;
+    padding-top: 10rem;
+  }
+
+  #home header div,
+  #home header h1 {
+    height: 100%;
+  }
 }

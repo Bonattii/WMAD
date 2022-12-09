@@ -16,6 +16,7 @@
   --primary-darker: hsl(0, 0%, 20%);
   --secondary-color: hsl(38, 88%, 48%);
   --white: hsl(240, 21%, 96%);
+  --white-darker: hsl(240, 21%, 100%);
 }
 
 html {
@@ -192,4 +193,25 @@ nav .wrapper {
   font-size: 1.8rem;
   line-height: 150%;
   font-weight: 400;
+}
+
+/* ===================== ABOUT ===================== */
+
+#about {
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+}
+
+#about .content p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+#about .content .button {
+  background-color: var(--white);
+  color: var(--primary-color);
+}
+
+#about .content .button:hover {
+  background-color: var(--white-darker);
 }

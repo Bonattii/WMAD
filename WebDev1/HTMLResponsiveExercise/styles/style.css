@@ -1,0 +1,113 @@
+/* ===================== GENERAL ===================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+
+  --nav-height: 9.5rem;
+
+  --primary-color: hsl(0, 0%, 25%);
+  --primary-darker: hsl(0, 0%, 20%);
+  --secondary-color: hsl(38, 88%, 48%);
+  --white: hsl(240, 21%, 96%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+
+  overflow: auto;
+
+  background-color: var(--primary-color);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+.button {
+  background-color: var(--primary-color);
+  border: none;
+  margin-bottom: 4rem;
+  padding: 1rem 2rem;
+  width: fit-content;
+
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  transition: background 200ms;
+}
+
+.button:hover {
+  background-color: var(--primary-darker);
+}
+
+section {
+  padding-block: 10rem;
+}
+
+section header h1 {
+  font-size: 4rem;
+  color: var(--white);
+  line-height: 130%;
+  font-weight: 700;
+
+  margin-bottom: 2.4rem;
+}
+
+section header h2 {
+  line-height: 3.9rem;
+  font-size: 2.5rem;
+  color: var(--white);
+
+  margin-bottom: 2rem;
+}
+
+section header h3 {
+  font-size: 2rem;
+  color: var(--primary-darker);
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+
+  margin-bottom: 2rem;
+}
+
+section .content p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 130%;
+
+  color: var(--white);
+
+  margin-bottom: 4rem;
+}
+
+h1 > span,
+h2 > span {
+  color: var(--secondary-color);
+}
